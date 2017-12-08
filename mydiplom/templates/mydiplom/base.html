@@ -1,0 +1,146 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Результаты тренировок</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="bootstrap-theme.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse bg-primary">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Результаты тренировок</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="nav-item dropdown"><a href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Тренировки <i class="fa fa-sort-desc" aria-hidden="true"></i>
+</a>
+<div class="dropdown-menu  navbar-inverse bg-primary" aria-labelledby="navbarDropdownMenuLink"><center>
+          <a class="dropdown-item" href="#" style="color: #fff;">Тренировки на улице</a><br>
+          <a class="dropdown-item" href="#" style="color: #fff;">Тренировки в зале</a>
+          <a class="dropdown-item" href="#" style="color: #fff;">Тренировки дома</a>
+          </center>
+        </div>
+      </li>
+      <li class="nav-item dropdown"><a href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Питание</a>
+<div class="dropdown-menu  navbar-inverse bg-primary" aria-labelledby="navbarDropdownMenuLink"><center>
+          <a class="dropdown-item" href="#" style="color: #fff;">Для набора массы</a><br>
+          <a class="dropdown-item" href="#" style="color: #fff;">Для похудения</a>
+          </center>
+        </div>
+      </li>
+      <li><a href="#">Об авторе</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="img-top">
+<div class="container">
+<div class="col-sm-6">
+  <span>Тренируйся</span>
+  <p>Хочешь набрать мышечную массу или сбросить лишний вес, но не знаешь как построить свою программу тренировок?</p>
+  <button data-toggle="modal" data-target="#registration" class="btn btn-primary">Начать тренировки</button>
+  </div>
+  </div>
+</div>
+<div class="container">
+  <div class="sports col-md-8">
+    <h3>Питайся правильно</h3>
+    <br>
+    <span>Не забывайте, что от тренировок будет небольшой результат, если вы будете питаться неправильно! Подберите диету, которая подходит под Вашу цель и следуйте ей. Все представленные программы составлены профессиональными диетологами и проверены на эффективность. Можете составить свой рацион питания с использованием нашего инструмента диет с рассчетом белков, жиров и углеводов.</span>
+   <hr>
+  </div>
+  <div class="col-md-4">
+  <h3>Подбери тренировку для себя</h3><br>
+    <form action="#" method="POST">
+    <label for="types">Направленность тренировок:</label>
+    <select name="type" id="types" class="form-control">
+      <option value="">На массу</option>
+      <option value="">На сушку</option>
+      <option value="">На рельеф</option>
+    </select>
+    <br>
+    <label for="male">Укажите Ваш пол:</label>
+     <select name="type" id="male" class="form-control">
+      <option value="">Мужской</option>
+      <option value="">Женский</option>
+    </select><br>
+    <button class="btn btn-primary">Подобрать тренировку</button>
+    </form>
+    </div>
+  
+  <div class="row"></div>
+ 
+  <div class="sports col-md-8">
+     <h3>Занимайся спортом</h3>
+    <br>
+    <span>Ежедневное занятие физическими упражнениями — лучший способ отдалить старость. Исследователи считают, что те, кто регулярно занимаются спортом, к примеру, бегом — продлевает свою жизнь примерно на 4 года. Если вы активно занимаетесь споротом у вас улучшается не только общее состояние и настроение, но и ум очищается от негативных мыслей.</span>
+     <hr>
+  </div>
+
+<div class="sports col-md-8">
+     <h3>Высыпайся</h3>
+    <br>
+    <span>Каждый человек чувствует на себе снижение внимания, настроения и работоспособности, при потери 2 - 3 часов сна. Как же тогда себя чувствует спортсмен, если в обычной жизни недосып сильно влияет на человека? <br>
+Некачественная тренировка, низкие результаты. Без такого основного восстановителя как сон бесполезно рассчитывать на хорошие спортивные результаты.</span>
+     <hr>
+  </div>
+
+</div>
+
+<div class="footer"><br>
+  <div class="container">
+    <div class="col-md-4">
+      <ul>
+      <li><a href="">Тренировки</a></li>
+      <li><a href="">Питание</a></li>
+      <li><a href="">Об авторе</a></li>
+    </ul>
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li><a href="+7902-222-22-22">+7902-222-22-22</a></li>
+        <li><a href="vk.com/id12312312">vk.com/id12312312</a></li>
+        <li><a href="intagram.com/">intagram.com/</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4"></div>
+    
+  </div>
+</div>
+
+<div id="registration" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Регистрация</h4>
+      </div>
+      <div class="modal-body">
+        <center>
+          <form action="#" method="POST">
+           <input class="form-control" type="text" name="name" placeholder="Укажите Ваш логин"><br>
+          <input class="form-control" type="text" name="pass" placeholder="Укажите Ваш пароль"><br>
+          </center>
+          <button class="btn btn-primary">Зарегистрироваться</button> 
+          </form>
+        
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/npm.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
